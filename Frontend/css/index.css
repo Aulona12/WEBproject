@@ -27,11 +27,19 @@
     justify-content: center;
     column-gap: 20px;
 }
+
+.headerContainer ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 5s;
+}
+
 .bookBotton{
     display: flex;
     justify-content:flex-end;
-    color: blueviolet;
+    color: rgb(247, 244, 244);
     padding-right: 20px;
+  
 }
 .backgroundPic {
     width: 100%;
@@ -53,3 +61,11 @@ ul {
  ul li a {
     text-decoration: none;
  }
+
+ .text1{
+    display: flex;
+    justify-content: bottom;
+    justify-content: flex-end;
+    
+ }
+ 
