@@ -1,0 +1,24 @@
+.headerContainer{
+    display: flex;
+    justify-content:space-between;
+}
+.logoEmri{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.headerContainer ul{
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    column-gap: 2em;
+
+}
+.backgroundPic {
+    width: 100vw; 
+    height: 100vh;
+    background-image: url('../img/Fotot/thebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
