@@ -14,34 +14,54 @@
     flex-direction: row;
     justify-content: flex-start;
     position: relative;
-    padding-left: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
     
 }
 .headerContainer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+
+    list-style: none;
+
     font-family: Arial;
     font-size: 13pt;
     color: white;
+
     padding-left: 100px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-content: center;
+    padding-top: 20px;
+    right: 150px;
+    position: relative;
     column-gap: 20px;
+
 }
 
 .headerContainer ul li a:hover {
-    color: white;
+    color:white;
     text-decoration: underline;
     cursor: pointer;
-    transition: 5s;
+    transition: 1s;
 }
+
+   ul li {
+    margin: 15px;
+   }
+  
+   ul li a {
+      text-decoration:solid;
+      color: rgb(136, 23, 181);
+      
+   }
+  
 
 .bookBotton{
     display: flex;
     justify-content:flex-end;
     color: white;
-    padding-right: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
   
 }
 .backgroundPic {
@@ -53,71 +73,129 @@
     
 }
 
-ul {
-  position: relative;
-  right: 150px;
-} 
- ul li {
-    margin: 15px;
- }
-
- ul li a {
-    text-decoration: none;
- }
-
  .paragrafi1{
     display: flex;
     flex-direction: column;
-    text-align: end;
+    text-align: center;
     position: relative;
-    top: 500px;
-    left: 870px;
-    width: 600px;
+    top: 400px;
+    left: 960px;
+    width: 550px;
     display: flex;
     justify-content: flex-end;
-    font-size: 28pt;
+    font-size: 25pt;
     color: white;
+ }
+ .pjesa2main{
+
+    padding-bottom: 100px;
+ 
  }
  .paragrafi2 {
     display: flex;
     justify-content: center;
-    font-size: 30pt;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
- .paragrafi3{
-    display: flex;
-    justify-content: center;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; 
     font-size: 20pt;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .carsButton{
+    display: flex;
+    justify-content:center;
+    color: white;
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 50px;
  }
  .rreshti1{
     display: flex;
     font-size: 17pt;
     justify-content: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
- .paragrafi4{
+ .part2{
+    background-color: rgb(221, 213, 229);
+    padding-bottom: 50px;
+    border: 5px solid rgb(113, 12, 163);
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 300px;
+ }
+ .paragrafi3{
     display: flex;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    
+
  }
  .kolona1{
-    width: 400px;
+    width: 350px;
+    border: 3px solid rgb(143, 40, 180) ;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding top: 10px;
+    text-align: center;
+ }
+ .rreshti11{
+    font-size: 20pt;
+    text-align: center;
  }
  .kolona2{
-    width: 400px;
+    width: 350px;
+    border: 3px solid rgb(143, 40, 180) ;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding top: 10px;    
+    text-align: center;
+
+ }
+ .rreshti22{
+    font-size: 20pt;
+    text-align: center;
  }
  .kolona3{
-    width: 400px;
+    width: 350px;
+    border: 3px solid rgb(143, 40, 180) ;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding top: 10px;
+    text-align: center;
+
+
+ }
+ .rreshti33{
+    font-size: 20pt;
+    text-align: center;
+ }
+ .rreshti44{
+    padding-top: 30px;
+    text-align: center;
  }
  .footeri{
     display: flex;
     justify-content: center;
     height: 70px;
-    background-color: rgb(181, 165, 195);
-    opacity: 0.6;
+    background-color: rgb(38, 36, 39);
+    
 
  }
+ .rreshti55{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+ }
+ 
 
  
