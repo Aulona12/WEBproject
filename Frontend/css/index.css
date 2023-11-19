@@ -6,7 +6,6 @@
 .headerContainer{
     display: flex;
     justify-content:space-between;
-    opacity: 70px;
     height: 70px;
     align-items: center;
 }
@@ -71,16 +70,54 @@ ul {
     flex-direction: column;
     text-align: end;
     position: relative;
-    top: 480px;
-    left: 850px;
+    top: 500px;
+    left: 870px;
     width: 600px;
- }
-
- .text1{
     display: flex;
     justify-content: flex-end;
     font-size: 28pt;
     color: white;
-;
  }
+ .paragrafi2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .paragrafi3{
+    display: flex;
+    justify-content: center;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .rreshti1{
+    display: flex;
+    font-size: 17pt;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .paragrafi4{
+    display: flex;
+    justify-content: space-between;
+ }
+ .kolona1{
+    width: 400px;
+ }
+ .kolona2{
+    width: 400px;
+ }
+ .kolona3{
+    width: 400px;
+ }
+ .footeri{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: rgb(181, 165, 195);
+    opacity: 0.6;
+
+ }
+
  
