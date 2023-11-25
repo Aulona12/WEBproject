@@ -11,8 +11,10 @@ body{
 .headerContainer{
     display: flex;
     justify-content:space-between;
-    height: 70px;
+    height: 3em;
     align-items: center;
+    background-color: rgb(205, 205, 205);
+    opacity: 0.6;
 }
 .logoEmri{
     display: flex;
