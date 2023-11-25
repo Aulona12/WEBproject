@@ -201,3 +201,6 @@ body {
 .container.active .toggle-right {
     transform: translateX(150%);
 }
+.homeback{
+    color: #fff;
+}
