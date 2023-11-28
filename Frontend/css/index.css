@@ -8,43 +8,35 @@ body{
    background-color: #F5F5F5;
    margin: 0;
    font-family: Arial,  sans-serif;
-   box-sizing: border-box;
-
 }
 
 
 .headerContainer{
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
     justify-content: space-between;
-   
-    
     align-items: center;
-    background-color: rgb(205, 205, 205);
-    opacity: 0.;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+   
+   
 }
 .logoEmri{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    position: relative;
+  
     
 }
 .headerContainer ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-
     list-style: none;
-
     font-family: Arial;
     font-size: 13pt;
     color: white;
-
-    position: relative;
-    padding-right: 10em;
     column-gap: 1em;
 
 }
@@ -72,7 +64,7 @@ body{
     justify-content:flex-end;
     color: white;
     position: relative;  
-    padding-right: 1em;
+   
 }
 .backgroundPic {
     width: 100%;
@@ -89,8 +81,9 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    font-size: 15pt;
+    font-size: 12pt;
     color: rgb(75, 8, 75);
+    padding:1em;
  }
  .sdiqka{
    font-size: 20pt;
@@ -98,8 +91,12 @@ body{
  }
  
  .pjesa2main{
-
-    padding: 3em;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   padding: 2em;
+   margin: 0;
+  
  
  }
  .paragrafi2 {
@@ -115,8 +112,7 @@ body{
     justify-content:center;
     color: white;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 2em;
+    padding: 1em 0;
  }
  .rreshti1{
     display: flex;
@@ -124,36 +120,36 @@ body{
     justify-content: center;
  }
  .part2{
-
-   
-    
-    padding-bottom: 50px;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 300px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   justify-content: center;
+    padding-bottom: 3em;
+    border: 0.5em solid blueviolet;
+    border-radius: 3em;
+    padding: 2em 0;
+    height: 50hv;
+    margin: 0;
  }
  .paragrafi3{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    justify-content: center;
+    padding:2em;
+    gap: 1em;
     
 
  }
  .kolona1{
-   
-    width: 350px;
-    border: 3px solid rgb(255, 255, 255) ;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    width: 25em;
+    border: 5px solid blueviolet;
+    border-radius: 1em;
+    padding: 2em;
     text-align: center;
  }
  .rreshti11{
@@ -161,14 +157,14 @@ body{
     text-align: center;
  }
  .kolona2{
-   
-    width: 350px;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;    
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    width: 25em;
+    border: 5px solid blueviolet;
+    border-radius: 1em;
+    padding:2em;   
     text-align: center;
 
  }
@@ -177,14 +173,14 @@ body{
     text-align: center;
  }
  .kolona3{
-   
-    width: 350px;
-    border: 3px solid rgb(255, 255, 255) ;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    width: 25em;
+    border: 5px solid blueviolet;
+    border-radius: 1em;
+    padding:2em;
     text-align: center;
 
 
@@ -194,11 +190,16 @@ body{
     text-align: center;
  }
  .rreshti44{
-    padding-top: 30px;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    padding:1em;
     text-align: center;
  }
  .footeri{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     height: 5em;
     background-color: rgb(38, 36, 39);
