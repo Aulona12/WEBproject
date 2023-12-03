@@ -17,9 +17,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-left: 1em;
-    padding-right: 1em;
-    
-   
+    padding-right: 1em;  
    
 }
 .logoEmri{
@@ -35,9 +33,9 @@ body{
     justify-content: center;
     list-style: none;
     font-family: Arial;
-    font-size: 13pt;
+    font-size: 15pt;
     color: white;
-    column-gap: 1em;
+    column-gap: 5em;
 
 }
 
