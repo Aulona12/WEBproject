@@ -62,7 +62,57 @@ body{
 .bookBotton{
     display: flex;
     justify-content:flex-end;
-    color: white;
+
     position: relative;  
    
 }
+header{
+    text-align: center;
+    background-color: rgb(137, 104, 222);
+    padding: 80px;
+    border-radius: 8px;
+}
+.paragrafi{
+    font-size: 15px;
+    color: rgb(185, 170, 224)
+}
+.paragrafi1{
+    font-size: 60px;
+    color: white;
+}
+.ph1 {
+    order: 3; /* Vendosja e rënditjes së elementit */
+    width: 320px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ph2 {
+    order: 2; /* Vendosja e rënditjes së elementit */
+    width: 320px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ph3 {
+    order: 1; /* Vendosja e rënditjes së elementit */
+    width: 320px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+ /* .ph{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ } */
