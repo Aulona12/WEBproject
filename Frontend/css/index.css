@@ -5,7 +5,8 @@
 }
 
 body{
-   background-color: #F5F5F5;
+   background-color: #dddfe0;
+   /* background: linear-gradient(to left, #eddeed, #878787); */
    margin: 0;
    font-family: Arial,  sans-serif;
 }
@@ -26,10 +27,7 @@ body{
    
     }
 
-    /* .levizNdrroNgjyren{
-      background: rgb(186, 186, 186);
-      box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
-    } */
+    
 
 .logoEmri{
     display: flex;
@@ -75,17 +73,16 @@ body{
     position: relative;  
    
 }
-.backgroundPic {
-    width: 100%;
-    height: 110vh;
-    background-image: url('../img/TheCars/a-class.jpeg');
-    background-size: cover;
-    background-position: center;
-    
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
-}
 
-
+    .backgroundPic {
+      width: 100%;
+      height: 110vh;
+      background-image: url('../img/TheCars/a-class.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+  }
  .paragrafi1{
     display: flex;
     flex-wrap: wrap;
@@ -98,183 +95,95 @@ body{
    font-size: 20pt;
    padding-top: 1rem;
  }
- .meIkonaSene{
+ .meIkonaSene {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-evenly;
-   align-items: center;
-   height: 30em;
- }
- .ikona1{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 15%;
-   align-items: center;
-   text-align: center;
-   gap: 1em;
-
- }
- .ikona2{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 15%;
-   align-items: center;
-   text-align: center;
-   gap: 1em;
-
-
-
- }
- .ikona3{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 15%;
-   align-items: center;
-   text-align: center;
-   gap: 1em;
-
-
- }
- .ikona4{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 15%;
-   align-items: center;
-   text-align: center;
-   gap: 1em;
-
-
- }.ikona5{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 15%;
-   align-items: center;
-   text-align: center;
-   gap: 1em;
-
-
-
- }
- .pjesa2main{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   padding: 2em;
-   margin: 0;
-
- }
-
- .moto{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
- }
- .paragrafi2 {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18pt;
-    text-align: center;
- }
-
-
- .carsButton{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
+   justify-content: space-around;
+   justify-content: center;
+   gap: 2em;
+   padding: 4em;
  }
  
- .rreshti1{
-    display: flex;
-    font-size: 17pt;
-    justify-content: center;
+ .ikona1, .ikona2, .ikona3, .ikona4, .ikona5 {
+   width: 15%;
+   text-align: center;
  }
- .part2{
+ 
+ .titujtIconav {
+   font-size: 18px;
+   font-weight: bold;
+ }
+ 
+ .Distinctive {
+   font-size: 14px;
+   line-height: 1.6;
+ }
+ 
+.theFleet{
+   padding:2em;
+}
+.paragrafi2 {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
    justify-content: center;
-    padding-bottom: 3em;
-    border: 0.5em solid blueviolet;
-    border-radius: 3em;
-    padding: 2em 0;
-    height: 50hv;
-    margin: 0;
- }
- .paragrafi3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    padding:2em;
-    gap: 1em;
-    
-
- }
- .kolona1{
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    width: 25em;
-    border: 5px solid blueviolet;
-    border-radius: 1em;
-    padding: 2em;
-    text-align: center;
- }
- .rreshti11{
-    font-size: 20pt;
-    text-align: center;
- }
- .kolona2{
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    width: 25em;
-    border: 5px solid blueviolet;
-    border-radius: 1em;
-    padding:2em;   
-    text-align: center;
-
- }
- .rreshti22{
-    font-size: 20pt;
-    text-align: center;
- }
- .kolona3{
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    width: 25em;
-    border: 5px solid blueviolet;
-    border-radius: 1em;
-    padding:2em;
-    text-align: center;
+   padding: 2em;
+   font-size: 20pt;
+   text-align: center;
+}
 
 
- }
- .rreshti33{
-    font-size: 20pt;
-    text-align: center;
- }
- .rreshti44{
+.sliderText{
    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    padding:1em;
-    text-align: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 25pt;
+   font-weight: bolder;
+}
+.iLostTrack{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction:column;
+   align-items: center;
+   padding:3em;
+
  }
+.iLostTrack button {
+   border-radius: 100%;
+   border-style: inherit;
+   width: 7em;
+   height: 3em;
+   font: 11pt;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(132, 132, 132);
+   opacity: 0.6;
+   
+}
+
+.iLostTrack button :hover {
+   background-color: rgb(189, 186, 186);
+}
+
+.carsButton{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   color: white;
+   text-align: center;
+   padding: 1em 0;
+}
+.newsletter{
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 5em;
+   padding-bottom: 15em;
+   
+}
+
  .footeri{
     display: flex;
     flex-wrap: wrap;
@@ -284,12 +193,4 @@ body{
     opacity: 0.6;
     
 
- }
- .rreshti55{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2em;
-    text-align: center;
-    color: white;
  }
