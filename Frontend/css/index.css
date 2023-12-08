@@ -283,13 +283,4 @@ body{
     cursor: pointer;
 }
 
- .footeri{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 5em;
-    background-color: rgb(38, 36, 39);
-    opacity: 0.6;
-    
-
- }
+ 
