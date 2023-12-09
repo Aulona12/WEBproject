@@ -242,6 +242,9 @@ body{
    font-family: 'Times New Roman', Times, serif;
    color: whitesmoke;
    padding: 2em;
+   /* background: rgba(255,255,255, .25);
+    box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
+    backdrop-filter: blur(2px); */
 
 }
 .newsletter form{
@@ -288,7 +291,7 @@ body{
     cursor: pointer;
 }
 footer {
-   background: linear-gradient(to bottom, rgb(188, 179, 197), rgb(62, 10, 111));
+   background: linear-gradient(to bottom, rgb(165, 139, 192), rgb(25, 1, 48));
    color: #fff;
    padding: 40px 0;
  }
