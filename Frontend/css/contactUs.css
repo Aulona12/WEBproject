@@ -13,8 +13,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(bc1.jpg);
+    background: url('../img/TheCars/back.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
 }
 
 .headerContainer {
@@ -139,8 +145,13 @@ ul li a {
 .contactForm {
     width: 40%;
     padding: 40px;
-    background: #fff;
+    border-radius: 5px;
+    background: rgba(255,255,255, .25);
+    box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
+    backdrop-filter: blur(2px);
+    
 }
+
 
 .contactForm h2 {
     font-size: 30px;

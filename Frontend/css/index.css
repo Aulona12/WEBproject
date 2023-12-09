@@ -102,10 +102,9 @@ body{
    flex-wrap: wrap;
    justify-content: space-around;
    justify-content: center;
-   align-items: center;
    gap: 2em;
    padding: 4em;
-   height: 35em;
+   height: 25em;
  }
  
  .ikona1, .ikona2, .ikona3, .ikona4, .ikona5 {
@@ -230,13 +229,15 @@ body{
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
+   justify-content: center;
+   align-items: center;
    width: 100%;
-   height:50em;
+   height:40em;
    padding-top: 5em;
    padding-bottom: 5em;
 }
 .newsletterText{
-   font-size: 20pt;
+   font-size: 30pt;
    font-weight: bold;
    font-family: 'Times New Roman', Times, serif;
    color: whitesmoke;
@@ -249,15 +250,19 @@ body{
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   background: linear-gradient(to right, #72537b, #4b026a);
-   opacity: 0.6;
+   background-image: url('../img/TheCars/why-kei-8e2gal_GIE8-unsplash.jpg'); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
    border-radius: 30px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
    position: relative;
    overflow: hidden;
-   width: 40em;
+   width: 80em;
+   height: 30em;
    max-width: 100%;
-   min-height: 20em;
+   min-height: 30em;
 }
 .newsletter form input {
    background-color: #eee;
@@ -282,5 +287,99 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
-
+footer {
+   background: linear-gradient(to bottom, rgb(188, 179, 197), rgb(62, 10, 111));
+   color: #fff;
+   padding: 40px 0;
+ }
  
+ .footer-content {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .footer-section {
+   flex: 1 1 250px;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   text-align: center;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: transparent; 
+   opacity: 0.9;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .footer-section:hover {
+   transform: translateY(-5px);
+ }
+ 
+ .footer-section h3 {
+   font-size: 18px;
+   margin-bottom: 10px;
+   color: #fff; 
+ }
+ 
+ .footer-section ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .footer-section ul li {
+   margin-bottom: 5px;
+ }
+ 
+ .footer-section a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .footer-section a:hover {
+   color: #ddd;
+ }
+ 
+ .footer-bottom {
+   text-align: center;
+   margin-top: 20px;
+   font-size: 14px;
+   color: #fff; /* Ensuring text color is readable */
+ }
+ 
+ .footer-section .social-icons {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .footer-section .social-icons li {
+   margin-right: 10px;
+ }
+ 
+ .footer-section .social-icons a {
+   color: #fff;
+   font-size: 24px;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .footer-section .social-icons a:hover {
+   color: #ddd;
+ }
+ 
+ /* Animation for social icons */
+ @keyframes iconAnimation {
+   0% { transform: translateY(0); }
+   50% { transform: translateY(-10px); }
+   100% { transform: translateY(0); }
+ }
+ 
+ .social-icons a {
+   animation: iconAnimation 1s ease-in-out infinite;
+ }
