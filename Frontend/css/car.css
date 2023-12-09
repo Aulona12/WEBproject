@@ -73,6 +73,21 @@ body{
     position: relative;  
    
 }
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #6a6eb5;
+}
 
 .grid-container {
     display: grid;
@@ -85,7 +100,7 @@ body{
     background-color: #eee;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgb(84, 5, 158);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -122,7 +137,7 @@ body{
   }
   
 footer {
-    background: linear-gradient(to bottom, rgb(165, 139, 192), rgb(25, 1, 48));
+    background: linear-gradient(to bottom, #480f79, #6f5edf);
     color: #fff;
     padding: 40px 0;
   }

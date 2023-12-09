@@ -50,7 +50,7 @@ body{
 }
 
 .headerContainer ul li a:hover {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     text-decoration: underline;
     cursor: pointer;
     transition: 1s;
@@ -75,7 +75,7 @@ body{
 }
 
 footer {
-    background: linear-gradient(to bottom, rgb(188, 179, 197), rgb(62, 10, 111));
+    background: linear-gradient(to top, rgb(188, 179, 197), rgb(62, 10, 111));
     color: #fff;
     padding: 40px 0;
   }
@@ -218,12 +218,12 @@ body {
 .contact .content h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #fff;
+    color: white;
 }
 
 .contact .content p {
     font-weight: 300;
-    color: #736565;
+    color: white;
 }
 
 .container {
@@ -250,7 +250,7 @@ body {
 .container .contactInfo .box .icon {
     min-width: 60px;
     height: 60px;
-    background: #fff;
+    background: #fbf9f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,29 +269,32 @@ body {
 
 .container .contactInfo .box .text h3 {
     font-weight: 500;
-    color: #00bcd4;
+    color: blueviolet;
 }
 
 .container .contactForm {
-    width: 70%;
+    width: 40%;
     padding: 20px;
     border-radius: 5px;
     background: rgba(255,255,255, .25);
     box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
     backdrop-filter: blur(2px);
     float: left;
+    align-items: center;
 }
 
 .container .contactForm h2 {
     font-size: 30px;
-    color: #b3a7a7;
+    color: white;
     font-weight: 500;
+    text-align: center;
 }
 
 .container .contactForm .inputBox {
     position: relative;
     width: 100%;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .container .contactForm .inputBox input,
@@ -301,6 +304,7 @@ body {
     font-size: 16px;
     margin: 10px 0;
     border: none;
+    border-radius: 10px;
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
@@ -314,21 +318,22 @@ body {
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: #666;
+    color: blueviolet;
+    padding-left: 10px;
 }
 
 .container .contactForm .inputBox input:focus ~ span,
 .container .contactForm .inputBox input:valid ~ span,
 .container .contactForm .inputBox textarea:focus ~ span,
 .container .contactForm .inputBox textarea:valid ~ span {
-    color: #e91e63;
+    color: rgb(215, 193, 235);
     font-size: 12px;
     transform: translateY(-20px);
 }
 
 .container .contactForm .inputBox input[type="submit"] {
     width: 100px;
-    background: #00bcd4;
+    background: blueviolet;    
     color: #fff;
     border: none;
     cursor: pointer;

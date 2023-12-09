@@ -291,7 +291,7 @@ body{
     cursor: pointer;
 }
 footer {
-   background: linear-gradient(to bottom, rgb(165, 139, 192), rgb(25, 1, 48));
+   background: linear-gradient(to bottom, #480f79, #6f5edf);
    color: #fff;
    padding: 40px 0;
  }

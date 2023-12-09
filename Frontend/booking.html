@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Frontend/css/booking.css">
+    <title>Booking Form</title>
+</head>
+<body>
+    <header>
+         <div class="headerContainer">
+        <div class="logoEmri">
+          <img src="../Frontend/img/TheCars/imperialiiiiiiiiii-removebg-preview.png" height=60hv; width=180em;>
+        </div>
+
+           <ul>
+              <li><a href="./index.html"><b>Home</b></a></li>
+              <li> <a href="./car.html"><b>Cars</b></a></li>
+              <li> <a href="./about.html"><b>About</b></a></li>
+              <li> <a href="./contactUs.html"><b>Contact</b></a></li>
+            
+           </ul>
+         <div class="bookBotton"><a href="./login.html"><button style="padding: 15px;border:#9400D3; background-color:#9400D3; border-radius: 12px; width: 115px; height: 50px; color: white; font-size: 20px; font-family:'Times New Roman', Times, serif;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); "><b>Log In</b></button></a></div>
+      
+      </div>
+    </header>
+    <div class="container">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        
+        <label for="id">ID:</label>
+        <input type="text" pattern="\d*" id="id" name="id" title="Please enter numbers only" placeholder="Enter your ID"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number"><br><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea><br><br>
+        
+        <label for="dates">Dates:</label>
+        <input type="date" id="start_date" name="start_date" placeholder="Select start date"><br><br>
+        <input type="date" id="end_date" name="end_date" placeholder="Select end date"><br><br>
+        
+        <label for="time_of_pickup">Time of Pickup:</label>
+        <input type="time" id="time_of_pickup" name="time_of_pickup" placeholder="Select pickup time"><br><br>
+        
+        <label for="time_of_drop_off">Time of Drop Off:</label>
+        <input type="time" id="time_of_drop_off" name="time_of_drop_off" placeholder="Select drop-off time"><br><br>
+        
+        <label for="location_of_pickup">Location of Pickup:</label>
+        <input type="text" id="location_of_pickup" name="location_of_pickup" placeholder="Enter pickup location"><br><br>
+        
+        <label for="location_of_drop_off">Location of Drop Off:</label>
+        <input type="text" id="location_of_drop_off" name="location_of_drop_off" placeholder="Enter drop off location">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Imperial Car Rental: Where luxury meets convenience. Experience unparalleled comfort and style on the road with our elite fleet of vehicles.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html"><b>Home</b></a></li>
+          <li> <a href="./car.html"><b>Cars</b></a></li>
+          <li> <a href="./about.html"><b>About</b></a></li>
+          <li> <a href="./contactUs.html"><b>Contact</b></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: imperial@gmail.com</p>
+        <p>Phone: +1234567890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Connect on social media for updates:</p>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 ImperialCarRental.com</p>
+    </div>
+</footer>
+</body>
+</html>

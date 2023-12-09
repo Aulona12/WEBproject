@@ -6,12 +6,14 @@
 
 body{
    background-color: #dddfe0;
+   /* background: linear-gradient(to left, #eddeed, #878787); */
    margin: 0;
    font-family: Arial,  sans-serif;
 }
 
 
 .headerContainer{
+      /* position: fixed;  */
       top: 0;
       left: 0;
       width: 100%;
@@ -68,54 +70,80 @@ body{
     display: flex;
     justify-content:flex-end;
     color: white;
-    position: relative;
+    position: relative;  
+   
 }
-h1{
-    text-align: center;
-    background-color: rgb(137, 104, 222);
-    padding: 80px;
-    border-radius: 8px;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #5c258d, #4389a2);
+    border-radius: 15px;
+    height: 140vh;
+    width: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: 0 auto; 
+
 }
-.paragrafi{
-    font-size: 15px;
-    color: rgb(185, 170, 224)
-}
-.paragrafi1{
-    font-size: 60px;
+
+form {
+    
+        width: 50%; /* Adjust the width as needed */
+        height: 100%; /* Adjust the height as needed */
+        margin: 40px auto;
+        align-items: center;
+      }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="date"], input[type="time"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+    background-color: blueviolet;
     color: white;
-}
-.ph1 {
-    order: 3; /* Vendosja e rënditjes së elementit */
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.ph2 {
-    order: 2; /* Vendosja e rënditjes së elementit */
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.ph3 {
-    order: 1; /* Vendosja e rënditjes së elementit */
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   margin-top: 20px;
+   transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+   background-color:  lightskyblue;
+  }
 footer {
-  background: linear-gradient(to bottom, #480f79, #6f5edf);
-  color: #fff;
+    background: linear-gradient(to top, rgb(165, 139, 192), rgb(25, 1, 48));
+    color: #fff;
     padding: 40px 0;
   }
   
@@ -207,5 +235,5 @@ footer {
   }
   
   .social-icons a {
-    animation: iconAnimation 1s ease-in-outinfinite;
-}
+    animation: iconAnimation 1s ease-in-out infinite;
+  }
