@@ -5,40 +5,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contact {
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url('../img/TheCars/back.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-    overflow: hidden;
+body{
+   background-color: #dddfe0;
+   /* background: linear-gradient(to left, #eddeed, #878787); */
+   margin: 0;
+   font-family: Arial,  sans-serif;
 }
 
-.headerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
-}
 
-.logoEmri {
+.headerContainer{
+      /* position: fixed;  */
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1em;
+      padding-right: 1em;
+   
+    }
+
+    
+
+.logoEmri{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  
+    
 }
-
-.headerContainer ul {
+.headerContainer ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46,40 +45,170 @@
     font-family: Arial;
     font-size: 15pt;
     color: white;
-    column-gap: 5em;
+    column-gap: 1em;
+
 }
 
 .headerContainer ul li a:hover {
-    color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
     text-decoration: underline;
     cursor: pointer;
     transition: 1s;
 }
 
-ul li {
+   ul li {
     margin: 1em;
-}
+   }
+  
+   ul li a {
+      text-decoration:solid;
+      color: rgb(136, 23, 181);
+      
+   }
+  
 
-ul li a {
-    text-decoration: solid;
-    color: rgb(136, 23, 181);
-}
-
-.bookBotton {
+.bookBotton{
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     color: white;
     position: relative;
 }
 
-.footeri {
+footer {
+    background: linear-gradient(to bottom, rgb(188, 179, 197), rgb(62, 10, 111));
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
     justify-content: center;
-    height: 5em;
-    background-color: rgb(38, 36, 39);
-    opacity: 0.6;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent; 
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; 
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #ddd;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff; /* Ensuring text color is readable */
+  }
+  
+  .footer-section .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-section .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .footer-section .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section .social-icons a:hover {
+    color: #ddd;
+  }
+  
+  /* Animation for social icons */
+  @keyframes iconAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .social-icons a {
+    animation: iconAnimation 1s ease-in-outinfinite;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .blur-background {
+    background-image: url('../img/TheCars/bc4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    filter: blur(6px); 
+    z-index: -1;
+  }
+  header, footer{
+    background: none;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+  
 
 .contact .content {
     max-width: 800px;
@@ -94,7 +223,7 @@ ul li a {
 
 .contact .content p {
     font-weight: 300;
-    color: #fff;
+    color: #736565;
 }
 
 .container {
@@ -106,9 +235,10 @@ ul li a {
 }
 
 .container .contactInfo {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    float: left;
 }
 
 .container .contactInfo .box {
@@ -142,31 +272,30 @@ ul li a {
     color: #00bcd4;
 }
 
-.contactForm {
-    width: 40%;
-    padding: 40px;
+.container .contactForm {
+    width: 70%;
+    padding: 20px;
     border-radius: 5px;
     background: rgba(255,255,255, .25);
     box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
     backdrop-filter: blur(2px);
-    
+    float: left;
 }
 
-
-.contactForm h2 {
+.container .contactForm h2 {
     font-size: 30px;
-    color: #333;
+    color: #b3a7a7;
     font-weight: 500;
 }
 
-.contactForm .inputBox {
+.container .contactForm .inputBox {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
+.container .contactForm .inputBox input,
+.container .contactForm .inputBox textarea {
     width: 100%;
     padding: 5px;
     font-size: 16px;
@@ -177,7 +306,7 @@ ul li a {
     resize: none;
 }
 
-.contactForm .inputBox span {
+.container .contactForm .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -188,16 +317,16 @@ ul li a {
     color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
+.container .contactForm .inputBox input:focus ~ span,
+.container .contactForm .inputBox input:valid ~ span,
+.container .contactForm .inputBox textarea:focus ~ span,
+.container .contactForm .inputBox textarea:valid ~ span {
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"] {
+.container .contactForm .inputBox input[type="submit"] {
     width: 100px;
     background: #00bcd4;
     color: #fff;
@@ -210,15 +339,16 @@ ul li a {
 }
 
 
-.container {
-    flex-direction: column;
-}
-
-.container .contactInfo {
-    margin-bottom: 40px;
-}
-
-.container .contactInfo,
-.contactForm {
-    width: 100%;
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .container .contactForm {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(255,255,255, .25);
+        box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
+        backdrop-filter: blur(2px);
+    }
 }
