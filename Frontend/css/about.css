@@ -5,23 +5,28 @@
 }
 
 body{
-   background-color: #F5F5F5;
+   background-color: #dddfe0;
    margin: 0;
    font-family: Arial,  sans-serif;
 }
 
 
 .headerContainer{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1em;
+      padding-right: 1em;
+   
+    }
+
     
-   
-   
-}
+
 .logoEmri{
     display: flex;
     flex-direction: row;
@@ -37,7 +42,7 @@ body{
     font-family: Arial;
     font-size: 15pt;
     color: white;
-    column-gap: 5em;
+    column-gap: 1em;
 
 }
 
@@ -62,11 +67,10 @@ body{
 .bookBotton{
     display: flex;
     justify-content:flex-end;
-
-    position: relative;  
-   
+    color: white;
+    position: relative;
 }
-header{
+h1{
     text-align: center;
     background-color: rgb(137, 104, 222);
     padding: 80px;
@@ -109,21 +113,99 @@ header{
     flex-direction: column;
     align-items: flex-start;
 }
-.footeri{
+footer {
+    background: linear-gradient(to bottom, rgb(188, 179, 197), rgb(62, 10, 111));
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
     justify-content: center;
-    height: 5em;
-    background-color: rgb(38, 36, 39);
-    opacity: 0.6;
-    
-
- }
-
-
-
- /* .ph{
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent; 
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; 
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #ddd;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff; /* Ensuring text color is readable */
+  }
+  
+  .footer-section .social-icons {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- } */
+    justify-content: center;
+  }
+  
+  .footer-section .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .footer-section .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section .social-icons a:hover {
+    color: #ddd;
+  }
+  
+  /* Animation for social icons */
+  @keyframes iconAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .social-icons a {
+    animation: iconAnimation 1s ease-in-outinfinite;
+}
