@@ -24,11 +24,23 @@
       
       </div>
     </header>
+    <main>
+      <h1>
+        <label class="paragrafi1">IMPERIAL CAR RENTAL</label>
+        <p class="paragrafi">Fill out this form</p>
+        
+       </h1>
+    
     <div class="container">
-    <form>
+      
+      <div class="firstpart">
+        <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
         
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname"><br><br>
+
         <label for="id">ID:</label>
         <input type="text" pattern="\d*" id="id" name="id" title="Please enter numbers only" placeholder="Enter your ID"><br><br>
         
@@ -40,7 +52,10 @@
         
         <label for="address">Address:</label>
         <textarea id="address" name="address" placeholder="Enter your address"></textarea><br><br>
-        
+      </form>
+      </div>
+      <div class="secondpart">
+        <form>
         <label for="dates">Dates:</label>
         <input type="date" id="start_date" name="start_date" placeholder="Select start date"><br><br>
         <input type="date" id="end_date" name="end_date" placeholder="Select end date"><br><br>
@@ -56,9 +71,16 @@
         
         <label for="location_of_drop_off">Location of Drop Off:</label>
         <input type="text" id="location_of_drop_off" name="location_of_drop_off" placeholder="Enter drop off location">
-        <button type="submit">Submit</button>
-    </form>
+      </form>
+      </div>
+
+  </div>
+  <div class="submit-container">
+    <button type="submit">Submit</button>
 </div>
+  
+  
+</main>
 <footer>
     <div class="footer-content">
       <div class="footer-section">
@@ -96,5 +118,59 @@
       <p>&copy; 2023 ImperialCarRental.com</p>
     </div>
 </footer>
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var id = document.getElementById("id").value;
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("phone_number").value;
+            var address = document.getElementById("address").value;
+            var startDate = document.getElementById("start_date").value;
+            var endDate = document.getElementById("end_date").value;
+            var pickupTime = document.getElementById("time_of_pickup").value;
+            var dropoffTime = document.getElementById("time_of_drop_off").value;
+            var pickupLocation = document.getElementById("location_of_pickup").value;
+            var dropoffLocation = document.getElementById("location_of_drop_off").value;
+            
+            var nameRegex = /^[a-zA-Z\s]+$/;
+            var surnameRegex = /^[a-zA-Z\s]+$/;
+            var idRegex = /^\d*$/;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var phoneRegex = /^\d+$/;
+            
+            if (!nameRegex.test(name)) {
+                alert("Please enter a valid name.");
+                return;
+            }
+
+            if (!surnameRegex.test(surname)) {
+                alert("Please enter a valid surname.");
+                return;
+            }
+            
+            if (!idRegex.test(id)) {
+                alert("Please enter numbers only for ID.");
+                return;
+            }
+            
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            
+            if (!phoneRegex.test(phoneNumber)) {
+                alert("Please enter a valid phone number.");
+                return;
+            }
+            
+            
+            alert("Form submitted successfully!"); 
+        });
+    </script>
+
+
 </body>
 </html>

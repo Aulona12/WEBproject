@@ -180,7 +180,23 @@
         </div>
     </footer>
     
+<script>
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    var email = document.getElementById("newsletterEmail").value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+    
+    alert("Subscription successful!");
+    console.log("Subscription successful!"); // Check the console for this message
+});
 
+</script>
 
     <script src="js/index.js"></script>
 

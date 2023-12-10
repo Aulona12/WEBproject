@@ -6,14 +6,12 @@
 
 body{
    background-color: #dddfe0;
-   /* background: linear-gradient(to left, #eddeed, #878787); */
    margin: 0;
    font-family: Arial,  sans-serif;
 }
 
 
 .headerContainer{
-      /* position: fixed;  */
       top: 0;
       left: 0;
       width: 100%;
@@ -72,6 +70,21 @@ body{
     color: white;
     position: relative;  
    
+}h1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:50%;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(to right, #5c258d, #4389a2);
+  box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
+  backdrop-filter: blur(2px);
+  border-radius: 15px;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
     display: flex;
@@ -81,22 +94,42 @@ body{
     align-items: center;
     background: linear-gradient(to right, #5c258d, #4389a2);
     border-radius: 15px;
-    height: 140vh;
+    height: 80vh;
     width: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    margin: 0 auto; 
+    padding: 7em;
+    margin: 2em auto;
+    box-sizing: border-box;
 
 }
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
 
-form {
-    
-        width: 50%; /* Adjust the width as needed */
-        height: 100%; /* Adjust the height as needed */
-        margin: 40px auto;
-        align-items: center;
-      }
+button[type="submit"] {
+  width:10%;
+  height: 3em;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(to right, #5c258d, #4389a2);
+ color: white;
+  font-size: 16pt;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+ background-color:  lightskyblue;
+}
   
-  
+
   label {
     display: block;
     margin-bottom: 10px;
@@ -127,20 +160,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
-  button[type="submit"] {
-    background-color: blueviolet;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-   margin-top: 20px;
-   transition: background-color 0.3s;
-  }
   
-  button[type="submit"]:hover {
-   background-color:  lightskyblue;
-  }
 footer {
     background: linear-gradient(to top, rgb(165, 139, 192), rgb(25, 1, 48));
     color: #fff;
@@ -202,7 +222,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #fff; /* Ensuring text color is readable */
+    color: #fff; 
   }
   
   .footer-section .social-icons {

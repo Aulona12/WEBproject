@@ -27,6 +27,20 @@
       
 
     <main>
+      <div class="theFleet">
+        <div class="paragrafi2">
+            <p><b><br>We offer cars for rent to suit your traveling plans. We have an extensive fleet, and you won't miss a car for you.</b></p>
+         </div>
+        
+            <div class="iLostTrack">
+               <img id="slideshow" style="max-width: 30%; max-height: 30%;"> 
+               <br>
+          
+            </div>
+            <div class="sliderText">DON'T RENT A CAR,<br> RENT THE CAR.
+            </div>
+    </div>
+      
       <div class="grid-container">
         <div class="grid-item">
           <img src="../Frontend/img/TheCars/m240i xdrive coupe.webp" alt="Car 1">
@@ -217,7 +231,37 @@
       </div>
   </footer>
        
-        
+        <script>
+          let i = 0;
+let imgArray = [
+    './img/TheCars/m240i xdrive coupe.webp',
+    './img/TheCars/530i drive sedan.webp',
+    './img/TheCars/740i sedan.webp',
+    './img/TheCars/bmw i5 m60.webp',
+    './img/TheCars/cosy.webp',
+    './img/TheCars/m3 sedan.webp',
+    './img/TheCars/m4 coupe.webp',
+    './img/TheCars/m8 convertible.webp',
+    './img/TheCars/m8 coupe.webp',
+    './img/TheCars/m8 gran coupe.webp',
+    './img/TheCars/m240i xdrive coupe.webp',
+    './img/TheCars/m440i gran coupe.webp',
+    './img/TheCars/x4 m.webp',
+    './img/TheCars/x6 m competiton.webp',
+];
+        function changeImg(){
+            document.getElementById('slideshow').src = imgArray[i];
+
+            if(i< imgArray.length -1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+            setTimeout("changeImg()", 1000);
+        }
+        document.addEventListener(onload, changeImg());
+        </script>
       
 </body>
 </html>
