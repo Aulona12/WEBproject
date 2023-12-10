@@ -1,3 +1,12 @@
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+const registerChangeBtn = document.getElementById('register-validate');
+const loginChangeBtn = document.getElementById('login-validate');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+
 
 
 registerBtn.addEventListener('click', () => {
@@ -7,12 +16,6 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
 
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -48,13 +51,13 @@ function validateLogin() {
     return true;
 }
 
-registerBtn.addEventListener('click', () => {
+registerChangeBtn.addEventListener('click', () => {
     if (validateRegistration()) {
         container.classList.add("active");
     }
 });
 
-loginBtn.addEventListener('click', () => {
+loginChangeBtn.addEventListener('click', () => {
     if (validateLogin()) {
         container.classList.remove("active");
     }
