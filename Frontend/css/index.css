@@ -240,7 +240,7 @@ body{
    font-size: 30pt;
    font-weight: bold;
    font-family: 'Times New Roman', Times, serif;
-   color: whitesmoke;
+   color: rgb(75, 8, 75);
    padding: 2em;
    /* background: rgba(255,255,255, .25);
     box-shadow:  0 0 10px 1px rgba(98, 98, 98, 0.25);
