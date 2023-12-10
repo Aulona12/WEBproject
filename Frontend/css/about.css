@@ -84,35 +84,6 @@ h1{
     font-size: 60px;
     color: white;
 }
-.ph1 {
-    order: 3; /* Vendosja e rënditjes së elementit */
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.ph2 {
-    order: 2; /* Vendosja e rënditjes së elementit */
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.ph3 {
-    order: 1; /* Vendosja e rënditjes së elementit */
-    width: 320px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
 footer {
   background: linear-gradient(to bottom, #480f79, #6f5edf);
   color: #fff;
@@ -174,7 +145,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #fff; /* Ensuring text color is readable */
+    color: #fff; 
   }
   
   .footer-section .social-icons {
@@ -208,4 +179,38 @@ footer {
   
   .social-icons a {
     animation: iconAnimation 1s ease-in-outinfinite;
+}
+
+
+section {
+  max-width: 89%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #cbb7f9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section h2 {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+section p {
+  width: 48%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 120%;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 48%;
 }
